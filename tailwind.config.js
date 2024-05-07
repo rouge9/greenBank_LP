@@ -20,6 +20,10 @@ module.exports = {
       fontFamily: {
         mplus: ['"M PLUS 1p"', "sans-serif"],
       },
+      backdropFilter: {
+        none: "none",
+        blur: "blur(80px)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -77,6 +81,11 @@ module.exports = {
       backgroundImage: () => ({
         "custom-background": "url('/Background.png')",
       }),
+    },
+  },
+  variants: {
+    extend: {
+      backdropFilter: ["responsive"], // Add other variants as needed
     },
   },
   plugins: [require("tailwindcss-animate")],

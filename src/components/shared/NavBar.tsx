@@ -9,7 +9,7 @@ import {
 export default function NavBar() {
   return (
     <>
-      <div className="md:flex hidden justify-between items-center md:px-20 sticky top-0">
+      <div className="md:flex hidden justify-between items-center md:px-20 sticky top-0 p-8">
         <div className="flex items-center space-x-2 cursor-pointer">
           <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
           <h3 className="text-xl font-bold text-secondary">GreenBank</h3>
