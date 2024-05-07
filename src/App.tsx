@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { Button } from "./components/ui/button";
+import Hero from "./components/sections/Hero";
+import NavBar from "./components/shared/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex w-full min-h-screen justify-center items-center">
-      <Button onClick={() => setCount(count + 1)}>Increment: {count}</Button>
+    <div className="w-full p-8 bg-custom-background bg-cover bg-neutral-800 font-mplus">
+      <NavBar />
+      <Hero />
     </div>
   );
 }
