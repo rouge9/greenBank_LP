@@ -1,6 +1,6 @@
 export default function Faq() {
   return (
-    <div className="flex flex-col w-full p-0 pt-16 md:p-12 md:px-60  ">
+    <div className="flex flex-col w-full p-0 pt-16 md:p-12 lg:px-60  ">
       <h1 className="text-xl  md:text-5xl text-center text-secondary font-extrabold">
         FAQs
       </h1>

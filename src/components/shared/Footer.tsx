@@ -2,8 +2,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="flex flex-col backdrop-filter backdrop-blur bg-opacity-5 bg-white">
-      <div className="flex p-8 md:p-24 flex-col md:flex-row md:justify-between md:items-center gap-6">
-        <div className="flex flex-col gap-3 md:w-[350px]">
+      <div className="flex p-8 lg:p-24 flex-col lg:flex-row lg:justify-between lg:items-center gap-6">
+        <div className="flex flex-col gap-3 lg:w-[350px]">
           <div className="flex items-center space-x-2 cursor-pointer">
             <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
             <h3 className="text-lg font-bold text-secondary">GreenBank</h3>
@@ -51,7 +51,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center md:px-24 p-8">
+      <div className="flex flex-col lg:flex-row justify-between items-center lg:px-24 p-8">
         <p className="text-muted-foreground text-md pb-4">
           © {year} GreenBank. All rights reserved
         </p>

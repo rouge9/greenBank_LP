@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function Testimonals() {
   return (
-    <div className="flex flex-col md:flex-row pt-16 md:p-24 justify-between items-center gap-6">
+    <div className="flex flex-col lg:flex-row pt-16 md:p-24 justify-between items-center gap-6">
       <div className="backdrop-filter backdrop-blur bg-opacity-5 bg-white rounded-3xl px-7 py-16 space-y-8">
         <Button className="flex py-6  backdrop-filter backdrop-blur bg-opacity-15 bg-white rounded-full">
           <img src="/qoute.svg " alt="security" className="w-5 h-5" />

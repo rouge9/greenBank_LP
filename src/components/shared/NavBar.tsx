@@ -34,7 +34,7 @@ export default function NavBar() {
           "shadow-md backdrop-filter backdrop-blur bg-opacity-5 bg-white"
       )}
     >
-      <div className="md:flex hidden justify-between items-center md:px-20 p-8">
+      <div className="lg:flex hidden justify-between items-center md:px-20 p-8">
         <a href="#" className="flex items-center space-x-2 cursor-pointer">
           <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
           <h3 className="text-xl font-bold text-secondary">GreenBank</h3>
@@ -56,7 +56,7 @@ export default function NavBar() {
       </div>
 
       {/* mobile navbar */}
-      <div className="md:hidden flex justify-between items-center p-8">
+      <div className="lg:hidden flex justify-between items-center p-8">
         <a href="#" className="flex items-center space-x-2 cursor-pointer">
           <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
           <h3 className="text-xl font-bold text-secondary">GreenBank</h3>

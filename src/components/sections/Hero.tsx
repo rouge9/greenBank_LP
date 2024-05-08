@@ -57,7 +57,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex pl-28">
+      <div className="hidden lg:flex  xl:pl-28">
         <img src="/HeroImage.svg" alt="HeroImage" className="" />
       </div>
     </div>

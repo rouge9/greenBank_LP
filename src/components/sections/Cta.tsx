@@ -2,8 +2,8 @@ import { Button } from "../ui/button";
 
 export default function Cta() {
   return (
-    <div className="flex pt-16 justify-center items-center">
-      <div className="flex flex-col md:w-[500px]">
+    <div className="flex pt-16 pb-8 lg:pb-0 justify-center items-center">
+      <div className="flex flex-col lg:w-[500px]">
         <h1 className="text-2xl md:text-5xl text-secondary text-wrap font-extrabold">
           Easy Way to manage your Finances
         </h1>
@@ -19,7 +19,7 @@ export default function Cta() {
           </Button>
         </div>
       </div>
-      <div className="hidden md:flex pl-28">
+      <div className="hidden lg:flex pl-28">
         <img src="/ctaImage.png" alt="cta" className="" />
       </div>
     </div>

@@ -7,10 +7,10 @@ export default function Payments() {
         <img src="/groupCardLeft.svg" alt="Payment" className="" />
       </div>
       <div className="flex flex-col md:w-[600px]">
-        <h1 className="text-2xl md:text-5xl text-secondary text-wrap font-extrabold">
+        <h1 className="text-2xl lg:text-5xl text-secondary text-wrap font-extrabold">
           Find the Perfect Credit Card for You
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground pt-2 md:pt-8">
+        <p className="text-lg lg:text-xl text-muted-foreground pt-2 md:pt-8">
           Discover your ideal credit card with ease. Our comprehensive selection
           caters to every financial need and lifestyle. Whether you seek
           cashback rewards, travel perks, or building credit, we have the

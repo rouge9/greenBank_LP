@@ -4,10 +4,10 @@ export default function OurProcess() {
   return (
     <div className="flex pt-16 md:pt-20 md:p-24 justify-center items-center">
       <div className="flex flex-col md:w-[600px]">
-        <h1 className="text-2xl md:text-5xl text-secondary text-wrap font-extrabold">
+        <h1 className="text-2xl lg:text-5xl text-secondary text-wrap font-extrabold">
           Design your Personalized credit Card.
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground pt-2 md:pt-8">
+        <p className="text-lg lg:text-xl text-muted-foreground pt-2 md:pt-8">
           You have the freedom to personalize the design of your credit card,
           ensuring a truly unique experience that makes you feel extraordinary
         </p>
