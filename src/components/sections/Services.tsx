@@ -6,7 +6,7 @@ export default function Services() {
       <h1 className="text-2xl lg:text-5xl text-center text-secondary font-extrabold">
         What do We Offer?
       </h1>
-      <div className="flex pt-10 lg:pt-16 flex-col lg:flex-row gap-5 lg:gap-0">
+      <div className="flex pt-10 lg:pt-16 flex-col lg:flex-row gap-5 lg:gap-0 lg:justify-between lg:items-center">
         <div className="flex">
           <Button className="flex p-4 py-9 backdrop-filter backdrop-blur bg-opacity-15 bg-white rounded-3xl">
             <img src="/security.svg " alt="security" className="w-10 h-10" />

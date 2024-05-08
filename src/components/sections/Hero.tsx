@@ -1,8 +1,12 @@
 import { people } from "@/lib/data";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 import { Button } from "../ui/button";
+import useMediaQuery from "@/lib/usemediaQuery";
+import clsx from "clsx";
 
 export default function Hero() {
+  const isLargeDesktop = useMediaQuery("(min-width: 1700px)");
+
   return (
     <div className="pt-8 md:pt-32 flex pb-6 md:pb-20">
       <div className="flex flex-col md:px-20 ">
@@ -20,7 +24,7 @@ export default function Hero() {
           </h1>
         </div>
         <div className="md:w-[580px]">
-          <p className="text-lg md:text-xl text-muted-foreground text-balance md:text-wrap pt-2 md:pt-11 md:p-2">
+          <p className="text-lg md:text-xl 2xl:text-2xl text-muted-foreground text-balance md:text-wrap pt-2 md:pt-11 md:p-2">
             Discover the power of our secure and rewarding credit cards. Explore
             our range of credit cards and take control of your finances today.
           </p>
@@ -57,8 +61,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex  xl:pl-28">
-        <img src="/HeroImage.svg" alt="HeroImage" className="" />
+      <div
+        className={clsx("hidden lg:flex lg:pl-28", isLargeDesktop && "pl-96")}
+      >
+        <img
+          src="/HeroImage.svg"
+          alt="HeroImage"
+          className={clsx(isLargeDesktop && "w-[9500px] h-[800px]")}
+        />
       </div>
     </div>
   );
