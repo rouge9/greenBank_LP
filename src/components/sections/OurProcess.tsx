@@ -2,7 +2,10 @@ import { Button } from "../ui/button";
 
 export default function OurProcess() {
   return (
-    <div className="flex pt-16 md:pt-20 md:p-24 justify-center items-center">
+    <div
+      id="ourprocess"
+      className="flex pt-16 md:pt-20 md:p-24 justify-center items-center"
+    >
       <div className="flex flex-col md:w-[600px]">
         <h1 className="text-2xl lg:text-5xl text-secondary text-wrap font-extrabold">
           Design your Personalized credit Card.

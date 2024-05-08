@@ -8,7 +8,7 @@ export default function Hero() {
   const isLargeDesktop = useMediaQuery("(min-width: 1700px)");
 
   return (
-    <div className="pt-8 md:pt-32 flex pb-6 md:pb-20">
+    <div id="home" className="pt-8 md:pt-32 flex pb-6 md:pb-20">
       <div className="flex flex-col md:px-20 ">
         <h1 className="text-2xl md:text-5xl font-extrabold text-secondary md:mb-6">
           Discover the Perfect

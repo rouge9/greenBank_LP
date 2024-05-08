@@ -1,6 +1,6 @@
 export default function StataCard() {
   return (
-    <div className="flex flex-col">
+    <div id="whyus" className="flex flex-col">
       <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center backdrop-filter backdrop-blur bg-opacity-5 bg-white p-16 lg:p-16 space-y-8 rounded-3xl">
         <div className="flex flex-col space-y-3 lg:px-20">
           <h1 className="text-5xl text-center text-secondary font-semibold ">

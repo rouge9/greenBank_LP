@@ -2,7 +2,10 @@ import { Button } from "../ui/button";
 
 export default function Payments() {
   return (
-    <div className="flex pt-16 md:pt-20 md:p-24 justify-center items-center">
+    <div
+      id="payment"
+      className="flex pt-16 md:pt-20 md:p-24 justify-center items-center"
+    >
       <div className="hidden md:flex pr-28">
         <img src="/groupCardLeft.svg" alt="Payment" className="" />
       </div>
