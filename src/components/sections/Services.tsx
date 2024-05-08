@@ -2,11 +2,8 @@ import { Button } from "../ui/button";
 
 export default function Services() {
   return (
-    <div className="flex flex-col pt-16 lg:pt-28">
-      <h1
-        id="services"
-        className="text-2xl lg:text-5xl text-center text-secondary font-extrabold"
-      >
+    <div id="services" className="flex flex-col pt-24 lg:pt-32">
+      <h1 className="text-2xl lg:text-5xl text-center text-secondary font-extrabold">
         What do We Offer?
       </h1>
       <div className="flex pt-10 lg:pt-16 flex-col lg:flex-row gap-5 lg:gap-0 lg:justify-between lg:items-center">

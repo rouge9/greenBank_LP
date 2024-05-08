@@ -107,7 +107,7 @@ export default function NavBar() {
       </div>
 
       {/* mobile navbar */}
-      <div className="lg:hidden flex justify-between items-center p-8">
+      <div className="lg:hidden flex justify-between items-center p-5">
         <a href="#" className="flex items-center space-x-2 cursor-pointer">
           <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
           <h3 className="text-xl font-bold text-secondary">GreenBank</h3>
