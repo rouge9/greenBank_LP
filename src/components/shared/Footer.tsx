@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer className="flex flex-col backdrop-filter backdrop-blur bg-opacity-5 bg-white">
-      <div className="flex p-24 justify-between items-center ">
-        <div className="flex flex-col gap-3 w-[350px]">
+      <div className="flex p-8 md:p-24 flex-col md:flex-row md:justify-between md:items-center gap-6">
+        <div className="flex flex-col gap-3 md:w-[350px]">
           <div className="flex items-center space-x-2 cursor-pointer">
             <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
             <h3 className="text-lg font-bold text-secondary">GreenBank</h3>
@@ -50,12 +50,15 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between items-center px-24">
-        <p className="text-muted-foreground text-md p-4">
+      <div className="flex flex-col md:flex-row justify-between items-center md:px-24 p-8">
+        <p className="text-muted-foreground text-md pb-4">
           © 2021 GreenBank. All rights reserved
         </p>
-        <p className="text-muted-foreground text-md p-4">
-          This page uses cookies. See cookies details here
+        <p className="text-muted-foreground text-sm">
+          This page uses cookies. See cookies details{" "}
+          <a href="#" className="text-muted-foreground underline">
+            here
+          </a>
         </p>
       </div>
     </footer>

@@ -11,18 +11,20 @@ import NavBar from "./components/shared/NavBar";
 
 function App() {
   return (
-    <div className="w-full p-8 md:p-0 bg-custom-background bg-cover bg-neutral-800 font-mplus">
-      <NavBar />
-      <Hero />
-      <div className="md:p-24">
-        <StataCard />
-        <Services />
+    <div className="w-full bg-custom-background bg-cover bg-neutral-800 font-mplus">
+      <div className="p-8 md:p-0">
+        <NavBar />
+        <Hero />
+        <div className="md:p-24">
+          <StataCard />
+          <Services />
+        </div>
+        <OurProcess />
+        <Payments />
+        <Testimonals />
+        <Faq />
+        <Cta />
       </div>
-      <OurProcess />
-      <Payments />
-      <Testimonals />
-      <Faq />
-      <Cta />
       <Footer />
     </div>
   );
