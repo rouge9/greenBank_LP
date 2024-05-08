@@ -1,4 +1,5 @@
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="flex flex-col backdrop-filter backdrop-blur bg-opacity-5 bg-white">
       <div className="flex p-8 md:p-24 flex-col md:flex-row md:justify-between md:items-center gap-6">
@@ -52,7 +53,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center md:px-24 p-8">
         <p className="text-muted-foreground text-md pb-4">
-          © 2021 GreenBank. All rights reserved
+          © {year} GreenBank. All rights reserved
         </p>
         <p className="text-muted-foreground text-sm">
           This page uses cookies. See cookies details{" "}

@@ -12,8 +12,8 @@ import NavBar from "./components/shared/NavBar";
 function App() {
   return (
     <div className="w-full bg-custom-background bg-cover bg-neutral-800 font-mplus">
+      <NavBar />
       <div className="p-8 md:p-0">
-        <NavBar />
         <Hero />
         <div className="md:p-24">
           <StataCard />

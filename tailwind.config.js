@@ -20,10 +20,6 @@ module.exports = {
       fontFamily: {
         mplus: ['"M PLUS 1p"', "sans-serif"],
       },
-      backdropFilter: {
-        none: "none",
-        blur: "blur(80px)",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

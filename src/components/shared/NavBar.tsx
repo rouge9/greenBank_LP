@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import {
   Sheet,
@@ -5,15 +6,39 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import clsx from "clsx";
 
 export default function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      // cleanup
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <>
-      <div className="md:flex hidden justify-between items-center md:px-20 sticky top-0">
-        <div className="flex items-center space-x-2 cursor-pointer">
+    <nav
+      className={clsx(
+        "sticky top-0 z-50",
+        scrolled &&
+          "shadow-md backdrop-filter backdrop-blur bg-opacity-5 bg-white"
+      )}
+    >
+      <div className="md:flex hidden justify-between items-center md:px-20 p-8">
+        <a href="#" className="flex items-center space-x-2 cursor-pointer">
           <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
           <h3 className="text-xl font-bold text-secondary">GreenBank</h3>
-        </div>
+        </a>
         <div className="md:flex hidden items-center space-x-7 cursor-pointer">
           <h1 className="text-secondary font-semibold text-lg">Why Us</h1>
           <h1 className="text-secondary text-lg font-semibold">Services</h1>
@@ -31,11 +56,11 @@ export default function NavBar() {
       </div>
 
       {/* mobile navbar */}
-      <div className="md:hidden flex justify-between items-center">
-        <div className="flex items-center space-x-2 cursor-pointer">
+      <div className="md:hidden flex justify-between items-center p-8">
+        <a href="#" className="flex items-center space-x-2 cursor-pointer">
           <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
           <h3 className="text-xl font-bold text-secondary">GreenBank</h3>
-        </div>
+        </a>
         <Sheet>
           <SheetTrigger>
             <img
@@ -44,7 +69,7 @@ export default function NavBar() {
               className="w-9 h-9 bg-green-600 rounded-md"
             />
           </SheetTrigger>
-          <SheetContent className="bg-primary">
+          <SheetContent className="bg-neutral-900">
             <SheetHeader>
               <div className="flex items-center space-x-2 cursor-pointer">
                 <img src="/logo.svg" alt="Logo" className="w-7 h-7" />
@@ -63,6 +88,6 @@ export default function NavBar() {
           </SheetContent>
         </Sheet>
       </div>
-    </>
+    </nav>
   );
 }
